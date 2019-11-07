@@ -10,7 +10,7 @@ public class MyClass {
         try {
             File file = new File("couse.txt");
             FileInputStream readIn = new FileInputStream(file);
-            InputStreamReader read = new InputStreamReader(readIn, "UTF-8" );
+            InputStreamReader read = new InputStreamReader(readIn, "Big5" );
             BufferedReader bufferedReader = new BufferedReader(read);
             String oneLine = null;
             while ((oneLine = bufferedReader.readLine()) != null) {
@@ -21,7 +21,7 @@ public class MyClass {
             read.close();
         }
         catch (Exception e) {
-            System.out.println("¿ù»~¡A½Ğ¦A¸Õ¤@¦¸");
+            System.out.println("éŒ¯èª¤ è«‹é‡è©¦");
             e.printStackTrace();
         }
         studentGrade.PrintAllData();
