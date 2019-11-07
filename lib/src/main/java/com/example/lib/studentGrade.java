@@ -27,14 +27,14 @@ public class studentGrade {
         Grade = StudentData.substring(Fdot+1);
         int FgradeD = Grade.indexOf(",");
         int EgradeD = Grade.lastIndexOf(",");
-        Calculus[i] = Grade.substring(0,FgradeD);//????¡PL?n??????
-        IntroductionToComputer[i] = Grade.substring((FgradeD+1),EgradeD);//?????p???¡Ò¡P¡±?¡Ñ
+        Calculus[i] = Grade.substring(0,FgradeD);
+        IntroductionToComputer[i] = Grade.substring((FgradeD+1),EgradeD);
         Programming[i] = Grade.substring(EgradeD+1);
         PeopleNumber++;
     }
     public void PrintAllData(){
         for(int i=0;i<PeopleNumber;i++){
-            System.out.printf("©m¦W %s ·L¿n¤À %s­pºâ¾÷·§½× %s µ{¦¡³]­p %s\n",Name[i],Calculus[i],IntroductionToComputer[i],Programming[i]);
+            System.out.printf("å§“å%så¾®ç©åˆ†%sè¨ˆç®—æ©Ÿæ¦‚è«–%sç¨‹å¼è¨­è¨ˆ%s\n",Name[i],Calculus[i],IntroductionToComputer[i],Programming[i]);
         }
     }
 }
